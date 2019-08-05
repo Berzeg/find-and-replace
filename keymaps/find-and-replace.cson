@@ -32,7 +32,7 @@
   'ctrl-u': 'find-and-replace:select-undo'
   'ctrl-k ctrl-d': 'find-and-replace:select-skip'
 
-'.platform-darwin .find-and-replace':
+'.platform-darwin .find-and-replace--rename-dir':
   'shift-enter': 'find-and-replace:show-previous'
   'cmd-enter': 'find-and-replace:confirm'
   'alt-enter': 'find-and-replace:find-all'
@@ -40,8 +40,9 @@
   'cmd-alt-c': 'find-and-replace:toggle-case-option'
   'cmd-alt-s': 'find-and-replace:toggle-selection-option'
   'cmd-alt-w': 'find-and-replace:toggle-whole-word-option'
+  'cmd-alt-r': 'find-and-replace:toggle-rename-directory-option'
 
-'.platform-win32 .find-and-replace, .platform-linux .find-and-replace':
+'.platform-win32 .find-and-replace--rename-dir, .platform-linux .find-and-replace--rename-dir':
   'shift-enter': 'find-and-replace:show-previous'
   'ctrl-enter': 'find-and-replace:confirm'
   'alt-enter': 'find-and-replace:find-all'
@@ -53,27 +54,28 @@
   'cmd-alt-/': 'project-find:toggle-regex-option'
   'cmd-alt-c': 'project-find:toggle-case-option'
   'cmd-alt-w': 'project-find:toggle-whole-word-option'
+  'cmd-alt-r': 'find-and-replace:toggle-rename-directory-option'
 
 '.platform-win32 .project-find, .platform-linux .project-find':
   'ctrl-enter': 'project-find:confirm'
   'ctrl-alt-/': 'project-find:toggle-regex-option'
   'ctrl-shift-c': 'project-find:toggle-case-option'
 
-'.find-and-replace, .project-find, .project-find .results-view':
+'.find-and-replace--rename-dir, .project-find, .project-find .results-view':
   'tab': 'find-and-replace:focus-next'
   'shift-tab': 'find-and-replace:focus-previous'
 
-'.platform-darwin .find-and-replace .replace-container atom-text-editor':
+'.platform-darwin .find-and-replace--rename-dir .replace-container atom-text-editor':
   'cmd-enter': 'find-and-replace:replace-all'
 '.platform-darwin .project-find .replace-container atom-text-editor':
   'cmd-enter': 'project-find:replace-all'
 
-'.platform-win32 .find-and-replace .replace-container atom-text-editor':
+'.platform-win32 .find-and-replace--rename-dir .replace-container atom-text-editor':
   'ctrl-enter': 'find-and-replace:replace-all'
 '.platform-win32 .project-find .replace-container atom-text-editor':
   'ctrl-enter': 'project-find:replace-all'
 
-'.platform-linux .find-and-replace .replace-container atom-text-editor':
+'.platform-linux .find-and-replace--rename-dir .replace-container atom-text-editor':
   'ctrl-enter': 'find-and-replace:replace-all'
 '.platform-linux .project-find .replace-container atom-text-editor':
   'ctrl-enter': 'project-find:replace-all'

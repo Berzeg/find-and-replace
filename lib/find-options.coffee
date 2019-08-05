@@ -7,6 +7,7 @@ Params = [
   'pathsPattern'
   'useRegex'
   'wholeWord'
+  'renameDirectory'
   'caseSensitive'
   'inCurrentSelection'
   'leadingContextLineCount'
@@ -24,6 +25,7 @@ class FindOptions
     @useRegex = state.useRegex ? atom.config.get('find-and-replace.useRegex') ? false
     @caseSensitive = state.caseSensitive ? atom.config.get('find-and-replace.caseSensitive') ? false
     @wholeWord = state.wholeWord ? atom.config.get('find-and-replace.wholeWord') ? false
+    @renameDirectory = state.renameDirectory ? atom.config.get('find-and-replace.renameDirectory') ? false
     @inCurrentSelection = state.inCurrentSelection ? atom.config.get('find-and-replace.inCurrentSelection') ? false
     @leadingContextLineCount = state.leadingContextLineCount ? atom.config.get('find-and-replace.leadingContextLineCount') ? 0
     @trailingContextLineCount = state.trailingContextLineCount ? atom.config.get('find-and-replace.trailingContextLineCount') ? 0
